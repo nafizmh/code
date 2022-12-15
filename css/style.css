@@ -1,0 +1,129 @@
+/* ------------------------------------------------------ */
+/*                      ^GOOGLE FONTS                     */
+/* ------------------------------------------------------ */
+@import url(https://fonts.googleapis.com/css?family=Zen+Dots:regular);
+
+
+/* ------------------------------------------------------ */
+/*                       ^COMMON CSS                      */
+/* ------------------------------------------------------ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 87.5rem;
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ------------------------------------------------------ */
+/*                         ^HEADER                        */
+/* ------------------------------------------------------ */
+header {
+    font-family: 'Zen Dots', cursive;
+    background: #996e05;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 8.125rem;
+    max-height: 20vh;
+    background: darkgoldenrod;
+    box-shadow: -0.125rem 0.125rem 4.1875rem -0.75rem rgba(82, 79, 6, 0.92);
+    -webkit-box-shadow: -0.125rem 0.125rem 4.1875rem -0.75rem rgba(82, 79, 6, 0.92);
+    -moz-box-shadow: -0.125rem 0.125rem 4.1875rem -0.75rem rgba(82, 79, 6, 0.92);
+    flex-direction: column;
+}
+
+.inner-header h2 {
+    letter-spacing: 0.375rem;
+    word-spacing: 2.5rem;
+}
+
+.inner-header .social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5625rem;
+    margin-top: 1.5625rem;
+}
+
+.inner-header .social-link i {
+    font-size: 2.0625rem;
+    color: darkslategray;
+}
+
+.inner-header .social-link .fa-facebook:hover {
+    color: darkblue;
+}
+
+.inner-header .social-link .fa-instagram:hover {
+    color: darkred;
+}
+
+.inner-header .social-link .fa-github:hover {
+    color: dimgray;
+}
+
+.inner-header .social-link .fa-chrome:hover {
+    color: greenyellow;
+}
+
+.code-area {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    padding: 6.25rem 0rem;
+
+}
+
+.code-area h2 {
+    margin-bottom: 1.25rem;
+}
+
+.img-area {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-top: 2.5rem;
+}
+
+.code-area img {
+    max-width: 100%;
+    width: 70%;
+    display: block;
+    margin: auto;
+}
+
+.get-code {
+    padding: 0.625rem 1.875rem;
+    border-radius: 1.25rem;
+    background-color: black;
+    color: white;
+    font-size: 1.25rem;
+    margin-top: 3.125rem;
+    transition: all 0.5s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.get-code:hover {
+    color: black;
+    background-color: white;
+}
+
+.code {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}

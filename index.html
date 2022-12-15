@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Code</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="shortcut icon" href="img/favcon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="inner-header">
+        <a href="https://fiverr.com/nafizmh">
+          <h2>
+            <code> Help Code Website </code>
+            <var> By </var>
+            <strong>Nafiz-MH</strong>
+          </h2>
+        </a>
+      </div>
+    </div>
+    <div class="code-area">
+      <div class="container">
+        <h2>1. Class Add Remove And Toggle</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Aspernatur blanditiis molestiae quidem amet <br />
+          sed dolores ea nobis placeat libero corporis at veritatis, laborum
+          eos incidunt, <br />
+          repellendus officia! Accusantium, iure repellendus.
+        </p>
+        <div class="img-area">
+          <img src="img/class-add-and-remove.png" alt="image.png" />
+          <div>
+            <button class="js-textareacopybtn get-code">Copy Code</button>
+            <textarea class="js-copytextarea code">
+              <!-- 
+                const menu = document.querySelector(".button"); ///click class
+const header = document.querySelector(".header") //where to ad
+
+menu.addEventListener('click', function (event) {
+    header.classList.toggle('clicked');
+});
+              -->
+            </textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="code-area">
+      <div class="container">
+        <h2>2. Fixed Header scroll js</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Aspernatur blanditiis molestiae quidem amet <br />
+          sed dolores ea nobis placeat libero corporis at veritatis, laborum
+          eos incidunt, <br />
+          repellendus officia! Accusantium, iure repellendus.
+        </p>
+        <div class="img-area">
+          <img src="img/stiky-header.png" alt="image.png" />
+          <div>
+            <button class="js-textareacopybtn1 get-code">Copy Code</button>
+            <textarea class="js-copytextarea1 code">
+              <!-- 
+                const nav = document.querySelector("header");
+
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 200) {
+        nav.classList.add("scrolled");
+    }
+    else {
+        nav.classList.remove("scrolled");
+    }
+});
+              -->
+            </textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="code-area">
+      <div class="container">
+        <h2>3. Contact From Using SMTPJS</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Aspernatur blanditiis molestiae quidem amet <br />
+          sed dolores ea nobis placeat libero corporis at veritatis, laborum
+          eos incidunt, <br />
+          repellendus officia! Accusantium, iure repellendus.
+        </p>
+        <div class="img-area">
+          <img src="img/contact-form.png" alt="image.png" />
+          <div>
+            <button class="js-textareacopybtn2 get-code">Copy Code</button>
+            <textarea class="js-copytextarea2 code">
+              <!--
+-------------html part -------------------
+<form onsubmit="Mail(); reset(); return false;">
+    <input type="text" name="Name" id="name" placeholder="Your Name*" required>
+    <input type="text" name="Phone" id="phone" placeholder="Your Phone*" required>
+    <input type="email" name="Email" id="email" placeholder="Your Email*" required>
+    <input type="text" name="subject" id="subject" placeholder="Your Subject*" required>
+    textarea
+    <input type="submit" value="send">
+</form>
+add this file https://smtpjs.com/v3/smtp.js
+
+
+------------js part ------------------
+function Mail() {
+    let name = document.getElementById("name").value;
+    let phone = document.getElementById("phone").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+    let subject = document.getElementById("subject").value;
+
+
+
+    Email.send({
+        SecureToken: "7787f1a4-7042-4219-97b2-aba8e3535579",
+        To: 'nafizmh20+test@gmail.com',
+        From: "war114116926@gmail.com",
+        Subject: "SMTP TEST MESSAGE",
+        Body: "Name-: " + name + "<br/> Phone-:" + phone + "<br/> Email-: " + email + "<br/> Subject-: " + subject + "<br/> Message-: " + message,
+    }).then(
+        message => alert(message)
+    );
+
+} 
+-->
+            </textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="code-area">
+      <div class="container">
+        <h2>4. Newsletter form using smtpjs</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Aspernatur blanditiis molestiae quidem amet <br />
+          sed dolores ea nobis placeat libero corporis at veritatis, laborum
+          eos incidunt, <br />
+          repellendus officia! Accusantium, iure repellendus.
+        </p>
+        <div class="img-area">
+          <img src="img/Newsletter-using-smtpjs.png" alt="image.png" />
+          <div>
+            <button class="js-textareacopybtn3 get-code">Copy Code</button>
+            <textarea class="js-copytextarea3 code">
+              <!-- 
+                  -------------html part -------------------
+<form onsubmit="newsletter(); reset(); return false">
+    <input type="email" required id="email" placeholder="Enter your Email">
+        <button type="submit">start</button>
+</form>
+
+
+---add this file https://smtpjs.com/v3/smtp.js
+
+
+------------js part ------------------
+function newsletter() {
+    const email = document.getElementById("email").value;
+
+    mail.send({
+        SecureToken: "e6c2c1b0-e11b-4d10-9752-5d064efa0462",
+        To: 'nafizmh20+work@gmail.com',
+        From: "nafizmh20+work@gmail.com",
+        Subject: "Subscribe User",
+        Body: "Email-: " + email,
+    }).then(
+        message => alert(message)
+    );
+}
+                -->
+            </textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="code-area">
+      <div class="container">
+        <h2>5. Website Password Protect</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Aspernatur blanditiis molestiae quidem amet <br />
+          sed dolores ea nobis placeat libero corporis at veritatis, laborum
+          eos incidunt, <br />
+          repellendus officia! Accusantium, iure repellendus.
+        </p>
+        <div class="img-area">
+          <img src="img/Webpage-password-protact.png" alt="image.png" />
+          <div>
+            <button class="js-textareacopybtn4 get-code">Copy Code</button>
+            <textarea class="js-copytextarea4 code">
+              <!--
+var password;
+var correctPassword = "114116926";
+password = prompt("enter your Password");
+
+if (password === correctPassword) {
+    alert("Correct Password");
+} else {
+    window.location = "https://fiver.com/nafizmh";
+}  -->
+            </textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
